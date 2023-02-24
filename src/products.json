@@ -1,0 +1,72 @@
+[
+  {
+    "namn": "Volvo XC90",
+    "produktnummer": "VOL001",
+    "pris": 650000,
+    "beskrivning": "Volvo XC90 är en lyxig SUV med hög säkerhet och modern teknik.",
+    "bild": "https://www.pngitem.com/pimgs/m/19-199647_volvo-xc90-price-hd-png-download.png"
+  },
+  {
+    "namn": "Tesla Model S",
+    "produktnummer": "TES001",
+    "pris": 850000,
+    "beskrivning": "Tesla Model S är en helt elektrisk sedan med hög prestanda och avancerade funktioner för självkörning.",
+    "bild": "https://www.pngmart.com/files/22/2018-Tesla-Model-S-PNG.png"
+  },
+  {
+    "namn": "Audi A4",
+    "produktnummer": "AUD001",
+    "pris": 450000,
+    "beskrivning": "Audi A4 är en sportig sedan med en elegant design och hög kvalitet.",
+    "bild": "https://purepng.com/public/uploads/large/purepng.com-audi-a4-caraudicars-961524670575xcrug.png"
+  },
+  {
+    "namn": "BMW X5",
+    "produktnummer": "BMW001",
+    "pris": 680000,
+    "beskrivning": "BMW X5 är en lyxig SUV med avancerad teknik och hög prestanda.",
+    "bild": "https://freepngimg.com/save/22625-bmw-x5-image/766x380"
+  },
+  {
+    "namn": "Mercedes-Benz E-Class",
+    "produktnummer": "MBZ001",
+    "pris": 550000,
+    "beskrivning": "Mercedes-Benz E-Class är en lyxig sedan med hög prestanda och en avancerad interiör.",
+    "bild": "https://www.nicepng.com/png/detail/134-1346277_new-2019-mercedes-benz-e-class-e-300.png"
+  },
+  {
+    "namn": "Ford Mustang",
+    "produktnummer": "FORD001",
+    "pris": 350000,
+    "beskrivning": "Ford Mustang är en ikonisk muskelbil med en kraftfull motor och sportig design.",
+    "bild": "https://www.pngall.com/wp-content/uploads/13/Ford-Mustang-PNG-Pic.png"
+  },
+  {
+    "namn": "Porsche 911",
+    "produktnummer": "POR001",
+    "pris": 1200000,
+    "beskrivning": "Porsche 911 är en legendarisk sportbil med en högpresterande motor och utmärkt kördynamik.",
+    "bild": "https://www.nicepng.com/png/detail/264-2649134_2017-porsche-911-turbo-s-yellow-porsche-911.png"
+  },
+  {
+    "namn": "Chevrolet Camaro",
+    "produktnummer": "CHEV001",
+    "pris": 420000,
+    "beskrivning": "Chevrolet Camaro är en muskelbil med en kraftfull V8-motor och en ikonisk design.",
+    "bild": "https://www.pngmart.com/files/22/Chevrolet-Camaro-PNG-Free-Download.png"
+  },
+  {
+    "namn": "Nissan GT-R",
+    "produktnummer": "NIS001",
+    "pris": 900000,
+    "beskrivning": "Nissan GT-R är en supersportbil med en högpresterande motor och avancerad teknik.",
+    "bild": "https://www.pngitem.com/pimgs/m/19-199647_volvo-xc90-price-hd-png-download.png"
+  },
+  {
+    "namn": "Ferrari 488",
+    "produktnummer": "FER001",
+    "pris": 2000000,
+    "beskrivning": "Ferrari 488 är en högpresterande supersportbil med en imponerande V8-motor och en ikonisk design.",
+    "bild": "https://www.pngitem.com/pimgs/m/19-199647_volvo-xc90-price-hd-png-download.png"
+  }
+]
