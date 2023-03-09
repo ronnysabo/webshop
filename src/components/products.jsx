@@ -62,7 +62,7 @@ function Products(props) {
     .reduce((sum, product) => sum + product.qty * product.price, 0)
     .toLocaleString();
 
-  let cars = props.car.map((car, index) => (
+  let bilar = props.car.map((car, index) => (
     <div className="col-lg-4 col-md-6 col-sm-6 col-xl-3 mb-5" key={index}>
       <Card className="m-1 h-100 row-100 w-70">
         <div className="img">
@@ -76,26 +76,22 @@ function Products(props) {
           <Card.Text>
             <b>Pris:</b> {car.pris.toLocaleString() + " SEK"}
           </Card.Text>
-          {show && (
-            <>
-              <Modal
-                animation={false}
-                show={show}
-                onHide={handleClose}
-                keyboard={false}
-              >
-                <Modal.Header closeButton>
-                  <Modal.Title>{selectedCarName}</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>{selectedCarDescription}</Modal.Body>
-                <Modal.Footer>
-                  <Button variant="secondary" onClick={handleClose}>
-                    Stäng
-                  </Button>
-                </Modal.Footer>
-              </Modal>
-            </>
-          )}
+          <Modal
+            animation={false}
+            show={show}
+            onHide={handleClose}
+            keyboard={false}
+          >
+            <Modal.Header closeButton>
+              <Modal.Title>{selectedCarName}</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>{selectedCarDescription}</Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary" onClick={handleClose}>
+                Stäng
+              </Button>
+            </Modal.Footer>
+          </Modal>
         </Card.Body>
         <div className="d-flex text-center m-2 justify-content-between">
           <button
@@ -120,7 +116,7 @@ function Products(props) {
       <h2 className="text-center m-3">The Magic Store</h2>
 
       <div className="d-flex">
-        <div className="h-100 col-8 row m-4">{cars}</div>
+        <div className="h-100 col-8 row m-4">{bilar}</div>
         <div>
           {totalItemsCart > 0 && (
             <>
