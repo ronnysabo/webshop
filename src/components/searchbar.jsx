@@ -1,7 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-
-import "./App.css";
-import data from "./cars.json";
+import data from "../cars.json";
 import Products from "./products";
 
 function Searchbar(props) {
@@ -29,12 +27,21 @@ function Searchbar(props) {
     setSearchString(e.target.value);
   };
 
+  //if u click Enter button, search!
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      searchInput();
+    }
+  };
+
   return (
     <>
-      <div className="m-2 justify-content-center">
+      <div className="m-4 justify-content-center">
         <div className="input-group text-center d-flex justify-content-center">
           <div className="form-outline">
             <input
+              placeholder="Sök"
+              onKeyPress={handleKeyDown}
               value={searchString}
               onChange={handleSearch}
               type="search"
@@ -45,7 +52,7 @@ function Searchbar(props) {
           <button
             onClick={searchInput}
             type="button"
-            className="btn btn-primary searchBtn"
+            className="btn btn-dark searchBtn"
           >
             Sök
           </button>

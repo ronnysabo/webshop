@@ -1,5 +1,3 @@
-import "./App.css";
-
 import Searchbar from "./searchbar";
 
 function App(props) {
