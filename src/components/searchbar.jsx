@@ -36,11 +36,13 @@ function Searchbar(props) {
 
   return (
     <>
+      <h2 className="text-center m-3">Bilar Online</h2>
+
       <div className="m-4 justify-content-center">
         <div className="input-group text-center d-flex justify-content-center">
           <div className="form-outline">
             <input
-              placeholder="Sök"
+              placeholder="Sök bil..."
               onKeyPress={handleKeyDown}
               value={searchString}
               onChange={handleSearch}

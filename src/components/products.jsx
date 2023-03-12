@@ -11,12 +11,14 @@ function Products(props) {
   const [selectedCarDescription, setSelectedCarDescription] = useState("");
   const [cartItems, setCartItems] = useState([]);
   const [qty, setQty] = useState(0);
+  const [selectedCarPic, setSelecetedCarPic] = useState("");
 
   const handleClose = () => setShow(false);
 
-  const handleShowMoreInfo = (namn, beskrivning) => {
+  const handleShowMoreInfo = (namn, beskrivning, bild) => {
     setSelectedCarName(namn);
     setSelectedCarDescription(beskrivning);
+    setSelecetedCarPic(bild);
     setShow(true);
   };
 
@@ -85,7 +87,15 @@ function Products(props) {
             <Modal.Header closeButton>
               <Modal.Title>{selectedCarName}</Modal.Title>
             </Modal.Header>
+            <div className="mt-3 d-flex justify-content-center">
+              <img
+                className="h-50 w-50 p-2 text-center"
+                src={selectedCarPic}
+                alt=""
+              />
+            </div>
             <Modal.Body>{selectedCarDescription}</Modal.Body>
+
             <Modal.Footer>
               <Button variant="secondary" onClick={handleClose}>
                 Stäng
@@ -95,7 +105,9 @@ function Products(props) {
         </Card.Body>
         <div className="d-flex text-center m-2 justify-content-between">
           <button
-            onClick={() => handleShowMoreInfo(car.namn, car.beskrivning)}
+            onClick={() =>
+              handleShowMoreInfo(car.namn, car.beskrivning, car.bild)
+            }
             className="btn btn-secondary w-35 m-2"
           >
             Mer info
@@ -113,8 +125,6 @@ function Products(props) {
 
   return (
     <div>
-      <h2 className="text-center m-3">The Magic Store</h2>
-
       <div className="d-flex">
         <div className="h-100 col-8 row m-4">{bilar}</div>
         <div>
