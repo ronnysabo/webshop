@@ -3,6 +3,7 @@ import data from "../cars.json";
 import Products from "./products";
 
 function Searchbar(props) {
+  //States
   const [searchString, setSearchString] = useState("");
   const [cars, setCars] = useState([]);
 
@@ -13,7 +14,7 @@ function Searchbar(props) {
   }, []);
 
   function searchInput() {
-    // Uppdatera cars baserat på söksträngen search.
+    // update cars based on searchstring
     const filteredcars = data.filter(
       (data) =>
         data.namn &&
@@ -21,19 +22,21 @@ function Searchbar(props) {
     );
     setCars(filteredcars);
   }
-  //   console.log(cars);
 
+  //changing state based on value from input-field
   const handleSearch = (e) => {
     setSearchString(e.target.value);
   };
 
-  //if u click Enter button, search!
+  //if u click Enter button, call the searchInput function!
   const handleKeyDown = (e) => {
     if (e.key === "Enter") {
       searchInput();
     }
   };
 
+  //render the heading, inputfield, searchbutton and cars
+  // (that includes searchstring)
   return (
     <>
       <h2 className="text-center m-3">Bilar Online</h2>

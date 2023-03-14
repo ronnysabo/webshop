@@ -1,4 +1,5 @@
 function Cart(props) {
+  //logic of how the cart will look like, taking some props
   return (
     <div>
       {props.cartItems.map((item, index) => (
